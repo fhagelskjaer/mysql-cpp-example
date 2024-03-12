@@ -33,14 +33,5 @@ find_package(Qt5Sql REQUIRED)
 add_executable(Main main.cpp)
 target_link_libraries(Main  Qt5::Core Qt5::Sql)
 
-# Make sure you link your targets with this command. It can also link libraries and
-# even flags, so linking a target that does not exist will not give a configure-time error.
-
-
-
-## [main]
-
-# This part is so the Modern CMake book can verify this example builds. For your code,
-# you'll probably want tests too
-
-
+add_executable(Insert main_insert.cpp)
+target_link_libraries(Insert  Qt5::Core Qt5::Sql)
